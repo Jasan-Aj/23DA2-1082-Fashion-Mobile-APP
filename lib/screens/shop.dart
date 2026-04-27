@@ -20,8 +20,6 @@ class ShopScreen extends StatelessWidget {
           CustomScrollView(
             slivers: [
               const SliverToBoxAdapter(child: SizedBox(height: kToolbarHeight + 40)),
-              
-              // Filter/Sort Bar
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 8),
@@ -36,8 +34,6 @@ class ShopScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
-              // Product Grid - Part 1
               SliverPadding(
                 padding: const EdgeInsets.all(24),
                 sliver: SliverGrid(
@@ -53,16 +49,12 @@ class ShopScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
-              // Small Middle Banner
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child: _buildSmallBanner(),
                 ),
               ),
-
-              // Product Grid - Part 2
               SliverPadding(
                 padding: const EdgeInsets.all(24),
                 sliver: SliverGrid(
@@ -83,7 +75,6 @@ class ShopScreen extends StatelessWidget {
             ],
           ),
           
-          // Bottom Nav Dock
           const BottomNavDock(activeIndex: 1),
         ],
       ),

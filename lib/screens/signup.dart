@@ -13,14 +13,12 @@ class SignupScreen extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
-          // Ethereal Background
           Container(
             decoration: const BoxDecoration(
               gradient: AppColors.etherealBackground,
             ),
           ),
           
-          // Ambient Blobs
           Positioned(
             top: -100,
             left: -100,
@@ -36,8 +34,6 @@ class SignupScreen extends StatelessWidget {
             left: MediaQuery.of(context).size.width / 4,
             child: _buildBlob(288, AppColors.secondaryContainer.withOpacity(0.2)),
           ),
-
-          // Form
           Center(
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 100),
@@ -74,8 +70,6 @@ class SignupScreen extends StatelessWidget {
               ),
             ),
           ),
-
-          // Identity Footer
           const Positioned(
             bottom: 32,
             left: 0,

@@ -17,7 +17,6 @@ class ProductDetailsScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFFDF8F8),
       body: Stack(
         children: [
-          // Background subtle gradient
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -33,20 +32,14 @@ class ProductDetailsScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: kToolbarHeight + 40),
                 
-                // Main Product Showcase
                 _buildProductShowcase(context),
-                
                 const SizedBox(height: 32),
-                
-                // Bento Info Blocks
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child: Column(
                     children: [
-                      // Card 1: Main Info
                       _buildInfoCard(context),
                       const SizedBox(height: 16),
-                      // Card 2: Configuration
                       _buildConfigCard(context),
                     ],
                   ),
@@ -54,15 +47,12 @@ class ProductDetailsScreen extends StatelessWidget {
                 
                 const SizedBox(height: 48),
                 
-                // Thumbnail Feed: Featured Looks
                 _buildFeaturedLooks(context),
-                
-                const SizedBox(height: 120), // Space for action footer
+                const SizedBox(height: 120),
               ],
             ),
           ),
           
-          // Action Footer
           _buildActionFooter(context),
         ],
       ),
@@ -75,7 +65,6 @@ class ProductDetailsScreen extends StatelessWidget {
         alignment: Alignment.center,
         clipBehavior: Clip.none,
         children: [
-          // Rotation Indicator (Circle at bottom)
           Positioned(
             bottom: -10,
             child: Container(
@@ -95,7 +84,6 @@ class ProductDetailsScreen extends StatelessWidget {
             ),
           ),
           
-          // Main Image
           Container(
             height: 400,
             width: double.infinity,

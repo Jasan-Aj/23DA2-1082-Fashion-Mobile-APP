@@ -20,12 +20,8 @@ class CartScreen extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(24, kToolbarHeight + 40, 24, 120),
             child: Column(
               children: [
-                // Cart Items
-            ...mockProducts.take(2).map((product) => _buildCartItem(context, product)),
-            
+              ...mockProducts.take(2).map((product) => _buildCartItem(context, product)),
             const SizedBox(height: 32),
-            
-            // Order Summary
             GlassCard(
               padding: const EdgeInsets.all(24),
               child: Column(
@@ -73,10 +69,7 @@ class CartScreen extends StatelessWidget {
                 ],
               ),
             ),
-            
             const SizedBox(height: 32),
-            
-            // Proceed Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

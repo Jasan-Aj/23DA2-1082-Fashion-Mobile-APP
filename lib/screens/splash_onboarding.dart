@@ -31,7 +31,6 @@ class _SplashOnboardingScreenState extends State<SplashOnboardingScreen> with Si
 
     _controller.forward();
 
-    // Automatically navigate to the login screen after 3 seconds
     Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacementNamed(context, '/login');
     });
@@ -51,9 +50,9 @@ class _SplashOnboardingScreenState extends State<SplashOnboardingScreen> with Si
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFFF1EFFF), // Very light lavender
-              Color(0xFFD4C8FF), // Lavender
-              Color(0xFFA68DFF), // Deep lavender/purple
+              Color(0xFFF1EFFF),
+              Color(0xFFD4C8FF),
+              Color(0xFFA68DFF),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,

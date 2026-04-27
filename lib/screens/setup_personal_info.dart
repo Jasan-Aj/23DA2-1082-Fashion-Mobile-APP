@@ -14,7 +14,6 @@ class SetupPersonalInfoScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFFDF8F8),
       body: Stack(
         children: [
-          // Background subtle editorial image
           Positioned.fill(
             child: Opacity(
               opacity: 0.05,
@@ -46,7 +45,6 @@ class SetupPersonalInfoScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 48),
                 
-                // Form Card
                 GlassCard(
                   padding: const EdgeInsets.all(32),
                   borderRadius: 40,
@@ -59,7 +57,6 @@ class SetupPersonalInfoScreen extends StatelessWidget {
                       _buildInputField('DATE OF BIRTH', '2003-11-14', Icons.calendar_today_outlined),
                       const SizedBox(height: 40),
                       
-                      // Save Button
                       Container(
                         width: double.infinity,
                         height: 64,

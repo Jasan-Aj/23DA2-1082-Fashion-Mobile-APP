@@ -16,14 +16,11 @@ class CheckoutScreen extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
-          // Ethereal Background
           Container(
             decoration: const BoxDecoration(
               gradient: AppColors.etherealBackground,
             ),
           ),
-          
-          // Ambient Blobs
           Positioned(
             top: -100,
             left: -100,
@@ -34,14 +31,11 @@ class CheckoutScreen extends StatelessWidget {
             right: -100,
             child: _buildBlob(320, AppColors.surfaceVariant.withOpacity(0.3)),
           ),
-
-          // Main Content
           SafeArea(
             child: SingleChildScrollView(
               padding: const EdgeInsets.only(left: 24, right: 24, top: 16, bottom: 120),
               child: Column(
                 children: [
-                  // Header Cell
                   GlassCard(
                     padding: const EdgeInsets.all(32),
                     child: Column(
@@ -68,22 +62,17 @@ class CheckoutScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
 
-                  // Shipping Address Bento
                   _buildShippingAddressBento(context),
                   const SizedBox(height: 16),
 
-                  // Payment Method Bento
                   _buildPaymentMethodBento(context),
                   const SizedBox(height: 16),
 
-                  // Order Summary Bento
                   _buildOrderSummaryBento(context),
                 ],
               ),
             ),
           ),
-
-          // Bottom Action Footer
           Positioned(
             bottom: 32,
             left: 24,

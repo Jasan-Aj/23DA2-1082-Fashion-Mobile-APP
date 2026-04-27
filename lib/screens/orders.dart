@@ -38,8 +38,6 @@ class OrdersScreen extends StatelessWidget {
                   style: TextStyle(color: Colors.black54, fontSize: 16, height: 1.5),
                 ),
                 const SizedBox(height: 32),
-                
-                // Filters
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -55,11 +53,10 @@ class OrdersScreen extends StatelessWidget {
                 
                 const SizedBox(height: 32),
                 
-                // Active Order
                 _buildOrderCard(
                   context: context,
                   status: 'IN TRANSIT',
-                  statusColor: const Color(0xFF0891B2), // Cyan 600
+                  statusColor: const Color(0xFF0891B2),
                   date: 'EST. OCT 24, 2026',
                   orderNumber: '#DNE-9921',
                   title: 'Cerulean Silk Blouse & Sculpted Trousers',
@@ -76,7 +73,6 @@ class OrdersScreen extends StatelessWidget {
                 
                 const SizedBox(height: 24),
                 
-                // Past Order 1
                 _buildOrderCard(
                   context: context,
                   status: 'DELIVERED',
@@ -95,7 +91,6 @@ class OrdersScreen extends StatelessWidget {
                 
                 const SizedBox(height: 24),
                 
-                // Past Order 2
                 _buildOrderCard(
                   context: context,
                   status: 'DELIVERED',
@@ -117,8 +112,6 @@ class OrdersScreen extends StatelessWidget {
               ],
             ),
           ),
-          
-          // Navigation Dock
           const BottomNavDock(activeIndex: 3),
         ],
       ),
@@ -172,7 +165,6 @@ class OrdersScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Status Row
           Row(
             children: [
               if (isPulsing)
@@ -198,10 +190,7 @@ class OrdersScreen extends StatelessWidget {
               Text(date, style: const TextStyle(color: Colors.black45, fontSize: 10, fontWeight: FontWeight.bold, letterSpacing: 2)),
             ],
           ),
-          
           const SizedBox(height: 16),
-          
-          // Order Header
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -235,10 +224,7 @@ class OrdersScreen extends StatelessWidget {
               ),
             ],
           ),
-          
           const SizedBox(height: 24),
-          
-          // Image Thumbnails
           Row(
             children: [
               for (var img in images)

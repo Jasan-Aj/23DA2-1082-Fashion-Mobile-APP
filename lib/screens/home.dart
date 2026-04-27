@@ -17,12 +17,9 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFE6E1F9),
       body: Stack(
         children: [
-          // Scrollable Content
           CustomScrollView(
             slivers: [
               const SliverToBoxAdapter(child: SizedBox(height: kToolbarHeight + 40)),
-              
-              // Header Section
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -47,8 +44,6 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              
-              // Categories
               SliverToBoxAdapter(
                 child: Container(
                   height: 60,
@@ -65,8 +60,6 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              
-              // Featured Banner Card (Desert Sands)
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.all(24.0),
@@ -151,13 +144,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              
-              // Product Grid + Seasonal Offer
               SliverPadding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 sliver: SliverList(
                   delegate: SliverChildListDelegate([
-                    // Row 1
                     Row(
                       children: [
                         Expanded(child: _buildProductCard(context, mockProducts[0])),
@@ -166,12 +156,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 32),
-                    
-                    // Seasonal Offer Banner
                     _buildSeasonalOfferBanner(context),
                     const SizedBox(height: 32),
-                    
-                    // Row 2
                     Row(
                       children: [
                         Expanded(child: _buildProductCard(context, mockProducts[2])),
@@ -185,8 +171,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          
-          // Bottom Nav Dock
           const BottomNavDock(activeIndex: 0),
         ],
       ),
@@ -211,7 +195,6 @@ class HomeScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         child: Stack(
           children: [
-            // Ambient subtle patterns could go here
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
               child: Column(

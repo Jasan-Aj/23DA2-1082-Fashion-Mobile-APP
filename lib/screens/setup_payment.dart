@@ -34,14 +34,12 @@ class SetupPaymentScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 48),
                 
-                // Payment Card
                 GlassCard(
                   padding: const EdgeInsets.all(32),
                   borderRadius: 40,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Total Amount Section
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.end,
@@ -80,7 +78,6 @@ class SetupPaymentScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 32),
                       
-                      // Save Card Toggle
                       Row(
                         children: [
                           Container(
@@ -99,7 +96,6 @@ class SetupPaymentScreen extends StatelessWidget {
                       
                       const SizedBox(height: 40),
                       
-                      // Action Button
                       Container(
                         width: double.infinity,
                         height: 64,

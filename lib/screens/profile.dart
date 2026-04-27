@@ -16,7 +16,6 @@ class ProfileScreen extends StatelessWidget {
       backgroundColor: AppColors.background,
       body: Stack(
         children: [
-          // Background subtle gradient
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -31,7 +30,6 @@ class ProfileScreen extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: kToolbarHeight + 80),
-                // Profile Header
                 Hero(
                   tag: 'profile_image',
                   child: Container(
@@ -51,8 +49,6 @@ class ProfileScreen extends StatelessWidget {
                 Text(mockUser.email, style: const TextStyle(color: Colors.black45, fontSize: 14)),
                 
                 const SizedBox(height: 40),
-                
-                // Menu Items
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child: GlassCard(
@@ -73,12 +69,11 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 160), // Space for the dock
+                const SizedBox(height: 160),
               ],
             ),
           ),
           
-          // Dock Positioning
           const BottomNavDock(activeIndex: 4),
         ],
       ),

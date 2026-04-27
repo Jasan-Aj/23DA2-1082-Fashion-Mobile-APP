@@ -13,7 +13,6 @@ class SetupShippingAddressScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFFDF8F8),
       body: Stack(
         children: [
-          // Background Hero Elements (Simulated gradients)
           Positioned(
             top: -100,
             right: -100,
@@ -48,7 +47,6 @@ class SetupShippingAddressScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 48),
                 
-                // Form Section
                 Row(
                   children: [
                     Expanded(child: _buildInputField('FULL NAME', 'Jasan AJ')),
@@ -75,7 +73,6 @@ class SetupShippingAddressScreen extends StatelessWidget {
                 
                 const SizedBox(height: 32),
                 
-                // Default Address Checkbox
                 Row(
                   children: [
                     Container(
@@ -94,7 +91,6 @@ class SetupShippingAddressScreen extends StatelessWidget {
                 
                 const SizedBox(height: 48),
                 
-                // Action Button
                 Container(
                   width: double.infinity,
                   height: 64,
