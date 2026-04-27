@@ -65,8 +65,8 @@ class OrdersScreen extends StatelessWidget {
                   actionColor: Colors.black,
                   isPulsing: true,
                   images: [
-                    'asset/images/casual.jpg',
-                    'asset/images/sweater.jpg',
+                    'assets/images/casual.jpg',
+                    'assets/images/sweater.jpg',
                   ],
                   extraItemsCount: 1,
                 ),
@@ -85,7 +85,7 @@ class OrdersScreen extends StatelessWidget {
                   actionColor: Colors.black54,
                   statusIcon: Icons.check_circle_outline,
                   images: [
-                    'asset/images/hoodie.jpg',
+                    'assets/images/hoodie.jpg',
                   ],
                 ),
                 
@@ -103,8 +103,8 @@ class OrdersScreen extends StatelessWidget {
                   actionColor: Colors.black54,
                   statusIcon: Icons.check_circle_outline,
                   images: [
-                    'asset/images/blazer women.jpg',
-                    'asset/images/casual women.jpg',
+                    'assets/images/blazer_women.jpg',
+                    'assets/images/casual_women.jpg',
                   ],
                 ),
                 
